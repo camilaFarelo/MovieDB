@@ -3,3 +3,17 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+img {
+  width: 100px;
+}
+
+li {
+  list-style: none;
+}
+
+input {
+  width: 95%;
+  height: 50px;
+  margin: 25px;
+}
