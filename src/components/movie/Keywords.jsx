@@ -5,7 +5,7 @@ const Keywords = ({keywords}) => {
     <div>
       <li><h3>keywords:</h3></li>
       {keywords.keywords.map(keyword => {
-        return (<li><a>{keyword.name}</a></li>)
+        return (<li key={keyword.name}><a>{keyword.name}</a></li>)
         })}
     </div>
   )

@@ -5,10 +5,9 @@ const Videos = ({videos}) => {
     <div>
       {videos.map(video => {
         return (
-          <div key={video.id}>
+          <div key={video.key}>
             {video.type === 'Trailer' &&
               <iframe
-                key={video.id}
                 width="420"
                 height="315"
                 src={'https://www.youtube.com/embed/' + video.key}>

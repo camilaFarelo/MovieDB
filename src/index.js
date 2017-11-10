@@ -8,6 +8,7 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import reducers from './reducers/index';
 import thunk from 'redux-thunk';
+import { StyleRoot } from 'radium';
 
 
 const store =  createStore(reducers, compose(
@@ -18,7 +19,9 @@ const store =  createStore(reducers, compose(
 ReactDOM.render(
   <Provider store={store}>
     <Router>
-      <App />
+      <StyleRoot>
+        <App />
+      </StyleRoot>
     </Router>
   </Provider>, document.getElementById('root'));
   registerServiceWorker();

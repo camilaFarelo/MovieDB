@@ -3,16 +3,7 @@ const initialState = {
   movies: {
     results: [],
   },
-  movie: {
-    genres: [],
-    videos: [],
-    keywords: {
-      keywords: [],
-    },
-    credits: {
-      crew: [],
-    },
-  }
+  movie: null,
 }
 export default (state=initialState, action) => {
   switch (action.type) {

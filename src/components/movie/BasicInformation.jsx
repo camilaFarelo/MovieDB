@@ -8,7 +8,7 @@ const BasicInformation = ({overview, budget, genres, duration, voteAverage, orig
       <li><h3>Duration:</h3> {duration}</li>
       <li><h3>Genres:</h3></li>
       {genres.map(genre => {
-        return (<li><a>{genre.name}</a></li>)
+        return (<li key={genre.name}><a>{genre.name}</a></li>)
         })}
       <li><h3>Original Language:</h3> {originalLanguage}</li>
     </div>
