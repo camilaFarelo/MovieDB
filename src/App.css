@@ -33,3 +33,15 @@
 .able {
   color: blue;
 }
+
+.pagination li {
+  display: inline-block;
+  margin: 10px;
+  cursor: pointer;
+}
+.pagination-information {
+  display: block;
+}
+.pagination-information a{
+  display: block
+}
