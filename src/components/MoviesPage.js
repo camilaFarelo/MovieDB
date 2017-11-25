@@ -16,7 +16,7 @@ class MoviesPage extends PureComponent {
     const totalMovies = this.props.data.total_results;
     return(
       <div>
-        <ul>
+        <ul className="filters-nav">
           <FilterByType
             filterName={'POPULAR'}
             onFilterByType={this.handleFilterByType}
@@ -39,18 +39,21 @@ class MoviesPage extends PureComponent {
           />
         </ul>
         <FilterByText onFilterByText={this.props.onFilterByText}/>
-        {movies.map(movie => (
-          <MovieList movie={movie} key={movie.id}/>
-        ))}
-        <Pagination
-          page={page}
-          totalPages={totalPages}
-          totalItems={totalMovies}
-          pageRangeDisplayed={5}
-          marginPagesDisplayed={3}
-          breakLabel="..."
-          OnPageChange={this.props.OnPageChange}
-        />
+        <div className="movies-container">
+          <h3>Popular Movies</h3>
+          {movies.map(movie => (
+            <MovieList movie={movie} key={movie.id}/>
+          ))}
+          <Pagination
+            page={page}
+            totalPages={totalPages}
+            totalItems={totalMovies}
+            pageRangeDisplayed={5}
+            marginPagesDisplayed={3}
+            breakLabel="..."
+            OnPageChange={this.props.OnPageChange}
+          />
+        </div>
       </div>
     )
   }

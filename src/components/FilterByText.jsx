@@ -6,7 +6,7 @@ const FilterByText = (props) => (
     className="search-input"
     type="text"
     onChange={props.onFilterByText}
-    placeholder="Search by text" />
+    placeholder="Search for movie" />
 )
 
 export default FilterByText;

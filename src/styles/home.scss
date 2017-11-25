@@ -1,0 +1,33 @@
+.filters-nav {
+  background-color: #061E28;
+  color: #fff;
+  padding: 50px;
+  margin: 0px;
+  li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  a {
+    color: #fff;
+  }
+}
+
+.search-input {
+  margin: 0px;
+  width: 100%;
+  box-sizing: border-box;
+  &:focus {
+    outline: none;
+  }
+  &::placeholder {
+    font-size: 16px;
+    font-style: italic;
+    padding-left: 50px;
+    opacity: 0.5;
+  }
+}
+
+
+.movies-container {
+  padding: 50px;
+}

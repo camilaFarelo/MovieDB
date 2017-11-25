@@ -1,47 +1,67 @@
+.filters-nav {
+  background-color: #061E28;
+  color: #fff;
+  padding: 50px;
+  margin: 0px; }
+  .filters-nav li {
+    display: inline-block;
+    margin-right: 20px; }
+  .filters-nav a {
+    color: #fff; }
+
+.search-input {
+  margin: 0px;
+  width: 100%;
+  box-sizing: border-box; }
+  .search-input:focus {
+    outline: none; }
+  .search-input::placeholder {
+    font-size: 16px;
+    font-style: italic;
+    padding-left: 50px;
+    opacity: 0.5; }
+
+.movies-container {
+  padding: 50px; }
+
 .App {
-  text-align: center;
-}
+  text-align: center; }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
+  height: 80px; }
 
 .App-header {
   background-color: #222;
   height: 150px;
   padding: 20px;
-  color: white;
-}
+  color: white; }
 
 .App-title {
-  font-size: 1.5em;
-}
+  font-size: 1.5em; }
 
 .App-intro {
-  font-size: large;
-}
+  font-size: large; }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
 
 .disable {
-  color: red;
-}
+  color: red; }
+
 .able {
-  color: blue;
-}
+  color: blue; }
 
 .pagination li {
   display: inline-block;
   margin: 10px;
-  cursor: pointer;
-}
+  cursor: pointer; }
+
 .pagination-information {
-  display: block;
-}
-.pagination-information a{
-  display: block
-}
+  display: block; }
+
+.pagination-information a {
+  display: block; }
