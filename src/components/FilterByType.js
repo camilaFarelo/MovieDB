@@ -14,7 +14,9 @@ const styles = {
 
 const FilterByType = ({filterName, onFilterByType, type}) => {
   return (
-    <li><a style={styles}onClick={(e) => onFilterByType(type)}>{filterName}</a></li>
+    <li>
+      <a style={styles}onClick={(e) => onFilterByType(type)}>{filterName}</a>
+    </li>
   )
 }
 

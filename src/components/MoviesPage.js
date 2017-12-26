@@ -41,9 +41,7 @@ class MoviesPage extends PureComponent {
         <FilterByText onFilterByText={this.props.onFilterByText}/>
         <div className="movies-container">
           <h3>Popular Movies</h3>
-          {movies.map(movie => (
-            <MovieList movie={movie} key={movie.id}/>
-          ))}
+          <MovieList movies={movies}/>
           <Pagination
             page={page}
             totalPages={totalPages}

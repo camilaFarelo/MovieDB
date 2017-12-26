@@ -1,18 +1,14 @@
 import React, {Components} from 'react';
+import Movie from './Movie';
 
-const MovieList = ({movie}) => {
+const MovieList = ({movies}) => {
   return (
-    <ul>
-      <li><a href={'/' + movie.id}>{movie.title}:{movie.release_date}</a></li>
-      <li>
-        <a href={'/' + movie.id}>
-          <img src={'https://image.tmdb.org/t/p/w500/' + movie.poster_path}/>
-        </a>
-      </li>
-      <li><a>{movie.overview}</a></li>
-    </ul>
+    <div>
+      {movies.map(movie => (
+        <Movie movie={movie} key={movie.id} />
+      ))}
+    </div>
   )
 }
-
 
 export default MovieList;
